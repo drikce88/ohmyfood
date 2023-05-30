@@ -1,0 +1,110 @@
+@import "./variables";
+@import "./mixins";
+@import "./placeholders";
+
+/****** Général ******/
+*{
+    font-family: 'Roboto', sans-serif ,'shrikhand', sans-serif;
+    box-sizing: border-box;
+}
+h2 h3{
+    font-family: 'shrikhand', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/****** Header ******/
+header{
+    width: 100%;
+    @extend %flex-column;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+
+}
+.logo{
+ width: 162px;
+ height: 44px;
+ padding-top: 14px;
+ padding-bottom: 5px;
+}
+.restaurant-address{
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 50px;
+    @extend %flex-center;
+}
+.fa-location-dot{
+    margin-right: 20px;
+}
+
+/****** Resevation ******/
+.reservation{
+    @extend %flex-column;
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 250px;
+}
+.btn{
+    @extend %flex-center;
+    text-decoration: none;
+    background: linear-gradient($primaire, $secondaire);
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+    color: #FFFF;
+    
+}
+.btn:hover{
+    border: 3px solid $primaire;
+}
+/****** Fonctionnement ******/
+.fonctionnement{
+   
+    padding-left: 20px;
+}
+.card-instruction{
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    width: 322px;
+    height: 72px;  
+}
+.instruction{
+   padding-top: 25px;
+}
+.number{
+    background-color: $primaire;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    padding: 5px 10px;
+    color: #FFFF;
+    margin-left: -10px;
+}
+.icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grey;
+}
+.icon-purple{
+    color: $primaire;
+}
+/****** Restaurants ******/
+.restaurants{
+    padding-left: 14px;
+    background-color: #F6F6F6;
+}
+.photo{
+    object-fit: cover;
+    width: 346px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card{
+    border-radius: 20px;
+    background-color: white;
+    width: 346px;
+    
+}
+
