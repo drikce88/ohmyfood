@@ -29,8 +29,8 @@
                 <p>Découvrez des restaurants d'exeption, selectionner par nos soins.</p>
                 <a href="#" class="btn">Explorer nos restaurants</a>
             </article>
-            <article class="fonctionnement">
-                <h2>Fonctionnement</h2>
+                <h2 class="title-2">Fonctionnement</h2>
+                <article class="fonctionnement">
                 <div class="card-instruction">
                     <p class="instruction">
                         <span class="number">1</span>
@@ -56,6 +56,7 @@
         </section>
         <section class="restaurants">
             <h2>Restaurants</h2>
+            <div class="card-top">
             <article class="card">
                 <a href="#">
                     <img class="photo" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'une assiette au restaurant la palette du goût">
@@ -66,6 +67,9 @@
                     </div>
                     <div>
                         <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="box-new">
+                        <p>Nouveau</p>
                     </div>
             </article>
             <article class="card">
@@ -78,9 +82,14 @@
                     </div>
                     <div>
                         <i class="fa-solid fa-heart"></i>
-                    </div>  
+                    </div>
+                    <div class="box-new">
+                        <p>Nouveau</p>
+                    </div>     
             </article>
-            <article class="card">
+            </div>
+            <div class="card-bottom">
+            <article class="card grid3">
                 <a href="#">
                     <img class="photo" src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiette au restaurant À la Française">
                 </a>
@@ -92,7 +101,7 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>  
             </article>
-            <article class="card">
+            <article class="card grid4">
                 <a href="#">
                     <img class="photo" src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'une assiette au restaurant Le délice des sens">
                 </a>
@@ -104,21 +113,21 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>  
             </article>
+        </div>
         </section>
-        <footer>
-            <a href="index.html"><img src=# alt="logo du site ohmyfood"></a>
+        <footer class="footer">
+            <a href="index.html"><img class="logo-footer" src="assets/images/logo/ohmyfood.png" alt="logo du site ohmyfood"></a>
             <article>
-                <div>
-                <i class="fa-solid fa-utensils"></i>
-                <a href="#">Proposer un restaurant</a>
+                <div class="icon-link">
+                <i class="fa-solid fa-utensils footer-icon"></i>
+                <a class="footer_link" href="#">Proposer un restaurant</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#">Devenire partenaire</a>  
+                <div class="icon-link">
+                    <i class="fa-solid fa-handshake-angle footer-icon"></i>
+                    <a class="footer_link" href="#">Devenire partenaire</a>  
                 </div>
-                <p><a href="#">Mentions légales</a></p>
-                <p><a href="#">Contact</a></p> 
-
+                <p class="footer_link1"><a class="footer_link" href="#">Mentions légales</a></p>
+                <p class="footer_link2"><a class="footer_link" href="#">Contact</a></p> 
             </article>
 
         </footer>
