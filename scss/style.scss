@@ -7,10 +7,14 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+html{
+   overflow-x: hidden;
+}
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
+   
 }
 /****** Header ******/
 header{
@@ -71,6 +75,7 @@ header{
 }
 .fonctionnement{
    @extend %flex-column;
+   
      
 }
 .card-instruction{
@@ -200,9 +205,11 @@ header{
     padding-bottom: 10px;
 }
 /****** Media Queries ******/
-@media (min-width: 1196px) {
+@media (min-width: 1196px){
+
 
     /****** Header ******/
+    
     header{
         height: 70px;
         
