@@ -16,7 +16,7 @@
 * {
   font-family: "roboto", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   text-decoration: none;
 }
@@ -60,6 +60,10 @@ html {
   padding-bottom: 5px;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 /****** Header ******/
 header {
   position: relative;
@@ -93,6 +97,7 @@ header {
   border-top-right-radius: 25px;
   position: relative;
   bottom: 60px;
+  margin-bottom: -60px;
 }
 
 .card-title {
@@ -100,6 +105,24 @@ header {
   align-items: center;
   margin-top: 20px;
   gap: 50px;
+}
+
+.fa-heart {
+  position: absolute;
+}
+
+.heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .card-menu {
@@ -111,6 +134,12 @@ header {
   padding-left: 15px;
 }
 
+.card-check {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -10px;
+}
+
 .price {
   font-weight: 700;
   font-size: 15px;
@@ -119,6 +148,22 @@ header {
   justify-content: flex-end;
   margin-right: 10px;
   margin-top: -17px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  position: relative;
+  bottom: 38px;
+}
+
+.fa-circle-check {
+  color: white;
 }
 
 .btn {
@@ -171,4 +216,46 @@ header {
 .footer_link2 {
   margin-top: 10px;
   padding-bottom: 10px;
+}
+
+/****** Media Queries ******/
+@media (min-width: 1196px) {
+  body {
+    background-color: white;
+  }
+  .photo {
+    height: 550px;
+  }
+  .main-container {
+    width: 80%;
+    left: 10%;
+  }
+  .card-title {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    width: 60%;
+  }
+  .footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer article {
+    display: flex;
+    align-items: center;
+  }
+  .footer .logo-footer {
+    padding-right: 50px;
+  }
+  .footer .icon-link {
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+  .footer .footer_link {
+    padding-right: 30px;
+  }
 }/*# sourceMappingURL=menu.css.map */

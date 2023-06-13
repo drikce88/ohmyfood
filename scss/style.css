@@ -17,6 +17,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 html {
@@ -44,6 +45,75 @@ body {
   width: 100%;
 }
 
+/****** Loader ******/
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.svg-icon {
+  stroke: darkmagenta;
+  stroke-width: 3.1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.svg-icon path:nth-child(1) {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(2) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(3) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(4) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(5) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: anim 10s ease forwards;
+}
+
+.svg-icon path:nth-child(6) {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(7) {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: anim 7s ease forwards;
+}
+
+.svg-icon path:nth-child(8) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: anim 7s ease forwards;
+}
+
+@keyframes anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 /****** Header ******/
 header {
   width: 100%;
@@ -58,6 +128,8 @@ header {
 }
 
 .restaurant-address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   background-color: #EAEAEA;
   width: 100%;
   height: 50px;
@@ -97,8 +169,8 @@ header {
 }
 
 /****** Fonctionnement ******/
-.title-2 {
-  padding-left: 30px;
+.title-1 {
+  padding-left: 27px;
 }
 
 .card-instruction {
@@ -138,14 +210,19 @@ header {
 }
 
 /****** Restaurants ******/
+.title-2 {
+  display: flex;
+  width: auto;
+  background-color: #F6F6F6;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: -5px;
+  padding-left: 27px;
+}
+
 .restaurants {
   background-color: #F6F6F6;
   padding-bottom: 70px;
-  position: relative;
-}
-.restaurants h2 {
-  position: relative;
-  right: 27%;
 }
 
 .card-top {
@@ -188,14 +265,28 @@ header {
 }
 
 .fa-heart {
-  position: relative;
+  position: absolute;
   left: 90%;
-  bottom: 50px;
+  bottom: 20px;
+}
+
+.heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .box-new {
   position: relative;
-  bottom: 285px;
+  bottom: 250px;
   left: 72%;
   background-color: #99E2D0;
   color: #008766;
@@ -263,9 +354,8 @@ header {
     height: 200px;
   }
   /****** Fonctionnement ******/
-  .title-2 {
-    position: relative;
-    left: 16%;
+  .title-1 {
+    padding-left: 18%;
   }
   .fonctionnement {
     display: flex;
@@ -277,8 +367,8 @@ header {
     width: 20%;
   }
   /****** Restaurants ******/
-  .restaurants h2 {
-    margin-left: -70px;
+  .title-2 {
+    padding-left: 18%;
   }
   .card {
     width: 30%;
