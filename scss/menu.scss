@@ -57,6 +57,9 @@ header{
     height: 20px;
     color: #353535;
   }
+  .fa-arrow-left{
+    font-size: larger;
+  }
 
 .logo{
  width: 162px;
@@ -116,15 +119,14 @@ header{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-   } 
+    width: 70%;
 }
-
+}
 .card-check{
     display: flex;
     justify-content: flex-end;
     margin-right: -60px;
     cursor: pointer;
-    
 }
 .price{
     font-weight: 700;
@@ -141,11 +143,18 @@ header{
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 70px;
+    height: 10px;
     background-color: $tertiaire;
     position: relative;
+    bottom: -30px;
+   } 
+.spin{
+    position: relative;
     bottom: 55px;
+    height: 70px;
+    background-color: $tertiaire;
 }
+
 .checkbox:hover{
    @include rotate;
     animation: rotate 0.5s ease-in-out;
@@ -173,6 +182,9 @@ header{
     margin-top: 50px;
     margin-bottom: 50px;   
 }
+.btn:hover{
+        transform: scale(1.04);
+    }
 /******* Footer ******/
 .footer{
     background-color: #353535;

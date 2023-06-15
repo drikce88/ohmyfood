@@ -64,7 +64,7 @@ body {
   }
 }
 .loader .svg-icon {
-  stroke: whitesmoke;
+  stroke: #FFC0CB;
   stroke-width: 3.1;
   position: absolute;
   top: 40%;
@@ -165,6 +165,10 @@ header {
   height: 50px;
   color: white;
   margin-top: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.04);
 }
 
 /****** Fonctionnement ******/

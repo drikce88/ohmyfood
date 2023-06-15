@@ -79,6 +79,9 @@ header{
     @include btn;
     margin-top: 10px;    
 }
+.btn:hover{
+    transform: scale(1.04);
+}
 
 /****** Fonctionnement ******/
 .title-1{

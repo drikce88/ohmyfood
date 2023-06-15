@@ -80,6 +80,10 @@ header {
   color: #353535;
 }
 
+.fa-arrow-left {
+  font-size: larger;
+}
+
 .logo {
   width: 162px;
   height: 44px;
@@ -160,6 +164,7 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: 70%;
 }
 
 .card-check {
@@ -184,10 +189,17 @@ header {
   justify-content: center;
   align-items: center;
   width: 50px;
-  height: 70px;
+  height: 10px;
   background-color: #99E2D0;
   position: relative;
+  bottom: -30px;
+}
+
+.spin {
+  position: relative;
   bottom: 55px;
+  height: 70px;
+  background-color: #99E2D0;
 }
 
 .checkbox:hover {
@@ -227,6 +239,10 @@ header {
   color: white;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.btn:hover {
+  transform: scale(1.04);
 }
 
 /******* Footer ******/
