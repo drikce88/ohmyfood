@@ -256,6 +256,10 @@ header {
   margin-bottom: 20px;
 }
 
+.card:hover {
+  transform: scale(1.01);
+}
+
 .card-txt {
   margin-left: 10px;
   margin-top: -10px;
