@@ -1,0 +1,102 @@
+
+/****** Layouts home ******/
+
+@mixin btn{
+    text-decoration: none;
+    background: linear-gradient($secondaire, $primaire);
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+    color: #FFFF;
+}
+@mixin number{
+    background-color: $primaire;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    padding: 5px 10px;
+    color: #FFFF;
+    margin-left: -10px;
+}
+@mixin instructions{
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    width: 80%;
+    height: 72px;
+    margin-bottom: 20px;
+}
+@mixin card-top-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin card{
+    border-radius: 20px;
+    background-color: white;
+    width: 90%;
+    height: 270px;
+    position: relative;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+@mixin photo{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+@mixin box-new{
+    position: relative;
+    bottom: 250px;
+    left: 72%;
+    background-color: $tertiaire;
+    color: #008766;
+    width: 80px;
+    height: 29px;
+    text-align: center;
+}
+/****** Restaurants ******/
+@mixin line-green{
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 40px;
+    border-bottom: 3px solid $tertiaire;
+    padding-bottom: 5px;
+}
+@mixin card-menu{
+    width: 98%;
+    height: 69px;
+    border-radius: 15px; 
+    background-color: white;
+    margin-top: 20px;
+    padding-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+
+/****** Animations *******/
+@mixin appear{
+    @keyframes appear{
+        0%{
+            transform: translateY(80%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+@mixin rotate{
+    @keyframes rotate {
+        0%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }
+}

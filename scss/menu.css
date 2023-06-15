@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /****** couleurs ******/
+/****** Layouts home ******/
+/****** Restaurants ******/
+/****** Animations *******/
 .btn, header {
   display: flex;
   justify-content: center;
@@ -128,6 +131,7 @@ header {
   -webkit-background-clip: text;
 }
 
+/****** Menu ******/
 .card-menu {
   animation: appear 1s ease-in-out;
   width: 98%;
@@ -261,6 +265,13 @@ header {
 @media (min-width: 1000px) {
   body {
     background-color: white;
+  }
+  .fa-arrow-left {
+    right: 0;
+  }
+  .arrow {
+    position: relative;
+    right: 400px;
   }
   .photo {
     height: 550px;
