@@ -116,7 +116,6 @@ header{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 85%;
    } 
 }
 
@@ -157,6 +156,11 @@ header{
     span{
         padding-right: 5px;
        
+    }
+    p,h3{
+        overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     }
 }
 

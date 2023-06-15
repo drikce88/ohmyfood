@@ -160,7 +160,6 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 85%;
 }
 
 .card-check {
@@ -208,6 +207,11 @@ header {
 }
 .card-check:hover span {
   padding-right: 5px;
+}
+.card-check:hover p, .card-check:hover h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fa-circle-check {

@@ -55,7 +55,7 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   position: fixed;
   z-index: 2;
-  animation: disappear 0.5s 3s forwards;
+  animation: disappear 2s 4s forwards;
   transform-origin: top;
 }
 @keyframes disappear {
@@ -64,7 +64,7 @@ body {
   }
 }
 .loader .svg-icon {
-  stroke: darkmagenta;
+  stroke: whitesmoke;
   stroke-width: 3.1;
   position: absolute;
   top: 40%;
