@@ -111,6 +111,7 @@ header{
     @include appear;
     animation: appear 1s ease-in-out;
     @include card-menu;
+    cursor: pointer;
    p, h3{
     overflow: hidden;
     white-space: nowrap;
