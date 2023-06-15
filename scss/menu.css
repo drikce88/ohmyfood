@@ -104,11 +104,14 @@ header {
   display: inline-flex;
   align-items: center;
   margin-top: 20px;
-  gap: 50px;
+  gap: 20px;
 }
 
 .fa-heart {
   position: absolute;
+  font-size: x-large;
+  top: 30px;
+  cursor: pointer;
 }
 
 .heart-full {
@@ -126,18 +129,40 @@ header {
 }
 
 .card-menu {
+  animation: appear 1s ease-in-out;
   width: 98%;
   height: 69px;
   border-radius: 15px;
   background-color: white;
   margin-top: 20px;
   padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+@keyframes appear {
+  0% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.card-menu p, .card-menu h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 85%;
 }
 
 .card-check {
   display: flex;
   justify-content: flex-end;
-  margin-right: -10px;
+  margin-right: -60px;
+  cursor: pointer;
 }
 
 .price {
@@ -146,7 +171,7 @@ header {
   color: #353535;
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
+  padding-right: 30px;
   margin-top: -17px;
 }
 
@@ -156,10 +181,28 @@ header {
   align-items: center;
   width: 50px;
   height: 70px;
-  border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   position: relative;
-  bottom: 38px;
+  bottom: 55px;
+}
+
+.checkbox:hover {
+  animation: rotate 0.5s ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.card-check:hover {
+  margin-right: 0px;
+}
+.card-check:hover span {
+  padding-right: 5px;
 }
 
 .fa-circle-check {
@@ -175,10 +218,6 @@ header {
   color: white;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-.btn:hover {
-  border: 3px solid #9356DC;
 }
 
 /******* Footer ******/
@@ -219,7 +258,7 @@ header {
 }
 
 /****** Media Queries ******/
-@media (min-width: 1196px) {
+@media (min-width: 1000px) {
   body {
     background-color: white;
   }
