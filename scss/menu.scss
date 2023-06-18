@@ -111,6 +111,9 @@ header{
     -webkit-background-clip: text;
 }
 /****** Menu ******/
+.menu{
+    width: 95%
+}
 .card-menu{
     @include appear;
     animation: appear 1s ease-in-out;
@@ -188,6 +191,7 @@ header{
 
 .fa-circle-check{
     color: white;
+    font-size: large;
 }
 .btn{
     @extend %flex-center;

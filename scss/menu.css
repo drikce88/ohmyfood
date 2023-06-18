@@ -137,9 +137,13 @@ header {
 }
 
 /****** Menu ******/
+.menu {
+  width: 95%;
+}
+
 .card-menu {
   animation: appear 1s ease-in-out;
-  width: 98%;
+  width: 100%;
   height: 69px;
   border-radius: 15px;
   background-color: white;
@@ -238,6 +242,7 @@ header {
 
 .fa-circle-check {
   color: white;
+  font-size: large;
 }
 
 .btn {
