@@ -9,6 +9,7 @@
     font-size: 14px;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 h1{
@@ -114,19 +115,33 @@ header{
     @include appear;
     animation: appear 1s ease-in-out;
     @include card-menu;
-    cursor: pointer;
-   p, h3{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 70%;
+    cursor: pointer;
 }
+.card-description{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80%;
+    h3, p{
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: nowrap;
+        } 
+          
 }
+
 .card-check{
     display: flex;
     justify-content: flex-end;
     margin-right: -60px;
     cursor: pointer;
+    height: 30px;
+    padding-left: 200px;
+    position: relative;
+   
 }
 .price{
     font-weight: 700;
@@ -135,8 +150,7 @@ header{
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
-    margin-top: -17px;
-    
+    margin-top: -17px;  
 }
 .checkbox{
     display: flex;
@@ -155,23 +169,22 @@ header{
     background-color: $tertiaire;
 }
 
-.checkbox:hover{
-   @include rotate;
-    animation: rotate 0.5s ease-in-out;
-   
-}
-.card-check:hover{
-    margin-right: 0px;
-    span{
-        padding-right: 5px;
-       
-    }
-    p,h3{
-        overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.card-menu:hover{
+    .card-description{
+     width: 70%;
+      }
+      .checkbox{
+        @include rotate;
+         animation: rotate 0.5s ease-in-out;
+        }     
+      .card-check{
+        margin-right: 0px;
+        span{
+            padding-right: 5px;  
+        }
     }
 }
+
 
 .fa-circle-check{
     color: white;
