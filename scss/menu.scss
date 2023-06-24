@@ -144,6 +144,7 @@ header{
     height: 30px;
     padding-left: 200px;
     position: relative;
+    transition: all 1s ;
    
 }
 .price{
@@ -164,6 +165,7 @@ header{
     background-color: $tertiaire;
     position: relative;
     bottom: -30px;
+    
    } 
 .spin{
     position: relative;
@@ -178,12 +180,12 @@ header{
       }
       .checkbox{
         @include rotate;
-         animation: rotate 0.5s ease-in-out;
+         animation: rotate 1s ease-in-out;
         }     
       .card-check{
-        margin-right: 0px;
+         margin-right: 0px;
         span{
-            padding-right: 5px;  
+            padding-right: 5px; 
         }
     }
 }
