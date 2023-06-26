@@ -259,6 +259,7 @@ header {
 
 .btn:hover {
   transform: scale(1.04);
+  opacity: 0.9;
 }
 
 /******* Footer ******/
